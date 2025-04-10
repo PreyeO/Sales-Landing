@@ -58,7 +58,9 @@ export default function WhyWebsite() {
           transition={{ duration: 0.6, delay: 1 }}
         >
           <a
-            href="#book"
+            href="https://forms.gle/wyuzM5KJoAxVGxut9"
+            target="_blank"
+            rel="noopener noreferrer"
             className="px-6 py-3 bg-[#fd025f] hover:bg-[#a6223a] transition-all duration-300 text-white text-lg font-semibold rounded-full shadow-xl font-inter"
           >
             Start Your Website Today!

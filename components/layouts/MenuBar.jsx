@@ -50,9 +50,15 @@ const MenuBar = () => {
           )}
         </Link>
       ))}
-      <Button className="hidden md:flex bg-gradient-to-r from-[#fd025f] to-[#a6223a] text-white mx-12 py-4 rounded-full hover:from-[#a6223a] hover:to-[#fd025f] border-2 border-[#ea9fa8] hover:border-[#a6223a] transition-all hover:scale-105">
-        Claim This Offer
-      </Button>
+      <a
+        href="https://forms.gle/wyuzM5KJoAxVGxut9"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        <Button className=" cursor-pointer hidden md:flex bg-gradient-to-r from-[#fd025f] to-[#a6223a] text-white mx-12 py-4 rounded-full hover:from-[#a6223a] hover:to-[#fd025f] border-2 border-[#ea9fa8] hover:border-[#a6223a] transition-all hover:scale-105">
+          Claim This Offer
+        </Button>
+      </a>
     </nav>
   );
 };
