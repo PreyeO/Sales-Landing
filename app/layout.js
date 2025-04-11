@@ -2,6 +2,8 @@ import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import MenuBar from "@/components/layouts/MenuBar";
 import Footer from "@/components/layouts/Footer";
+import GoogleAnalytics from "@next/third-parties/google";
+import Analytics from "@/analytics/Analytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -14,36 +16,48 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata = {
-  title: "Affordable Websites for Small Businesses",
+  title: "Affordable Websites for Small Businesses | Easter Offer – Pay Later",
   description:
-    "Create a stunning website that works for your business. Get your website built with SEO, domain, and hosting for a fixed price. Book your free consultation today!",
+    "Get your business online this Easter with a stunning, SEO-optimized website. Pay only when your site is ready. Limited slots for ₦100,000 offer!",
   keywords:
-    "small business website, professional websites, affordable web design, business website development, website with hosting, SEO optimized websites, free consultation",
-  author: "Your Company Name",
+    "Easter website promo, affordable web design Nigeria, small business website, pay later website, business website offer, SEO website Nigeria",
+  authors: [{ name: "LetsCr8T", url: "https://letscr8t.com" }],
   viewport: "width=device-width, initial-scale=1.0",
-  robots: "index, follow", // Tells search engines to index this page
-  og: {
-    title: "Affordable Websites for Small Businesses",
+  robots: "index, follow",
+  openGraph: {
+    title: "Turn Your Business Into a Customer Magnet | Easter Web Promo",
     description:
-      "Create a stunning website that works for your business. Get your website built with SEO, domain, and hosting for a fixed price. Book your free consultation today!",
-    image: "/path/to/your-image.jpg", // Change with the actual path to your image
-    url: "your-landing-page-url.com", // Replace with the actual URL
+      "Only 20 slots available for small business owners in Nigeria. Get your website done, SEO-ready, hosted, and pay nothing upfront!",
+    url: "https://your-landing-url.com",
+    siteName: "LetsCr8T",
+    images: [
+      {
+        url: "/easter-promo-cover.jpg", // Replace with real asset
+        width: 1200,
+        height: 630,
+        alt: "LetsCr8T Easter Offer",
+      },
+    ],
     type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Affordable Websites for Small Businesses",
+    title: "LetsCr8T Easter Promo – ₦100,000 Website Offer",
     description:
-      "Create a stunning website that works for your business. Get your website built with SEO, domain, and hosting for a fixed price. Book your free consultation today!",
-    image: "/path/to/your-image.jpg", // Use your image here
+      "Turn your business into a customer magnet. Only 20 website slots available for Easter. Pay only when your site is ready.",
+    images: ["/easter-promo-cover.jpg"],
   },
 };
 
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
+      <head>
+        <Analytics />
+      </head>
       <body className={`${geistSans.variable} ${geistMono.variable}`}>
         {children}
+        {/* <GoogleAnalytics gtmId="G-7BNBWJMF74" /> */}
         <Footer />
         <MenuBar />
       </body>
