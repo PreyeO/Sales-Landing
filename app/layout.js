@@ -22,18 +22,18 @@ export const metadata = {
     "Get your business online this Easter with a stunning, SEO-optimized website. Pay only when your site is ready. Limited slots for ₦100,000 offer!",
   keywords:
     "Easter website promo, affordable web design Nigeria, small business website, pay later website, business website offer, SEO website Nigeria",
-  authors: [{ name: "LetsCr8T", url: "https://letscr8t.com" }],
+  authors: [{ name: "LetsCr8T", url: "https://easter-promo-page.vercel.app/" }],
   viewport: "width=device-width, initial-scale=1.0",
   robots: "index, follow",
   openGraph: {
     title: "Turn Your Business Into a Customer Magnet | Easter Web Promo",
     description:
       "Only 20 slots available for small business owners in Nigeria. Get your website done, SEO-ready, hosted, and pay nothing upfront!",
-    url: "https://your-landing-url.com",
+    url: "https://easter-promo-page.vercel.app/",
     siteName: "LetsCr8T",
     images: [
       {
-        url: "/easter-promo-cover.jpg", // Replace with real asset
+        url: "/ads-cover.jpeg", // Replace with real asset
         width: 1200,
         height: 630,
         alt: "LetsCr8T Easter Offer",
@@ -46,7 +46,7 @@ export const metadata = {
     title: "LetsCr8T Easter Promo – ₦100,000 Website Offer",
     description:
       "Turn your business into a customer magnet. Only 20 website slots available for Easter. Pay only when your site is ready.",
-    images: ["/easter-promo-cover.jpg"],
+    images: ["/ads-cover.jpeg"],
   },
 };
 
