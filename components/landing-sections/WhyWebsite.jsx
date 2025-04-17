@@ -6,7 +6,10 @@ import Image from "next/image";
 
 export default function WhyWebsite() {
   return (
-    <section className="bg-[#1f1d1d] text-white py-20 px-6" id="whywebsite">
+    <section
+      className="bg-[#1f1d1d] text-white py-20 md:px-6 px-4"
+      id="whywebsite"
+    >
       <div className="max-w-6xl mx-auto text-center">
         <motion.h2
           className="text-3xl md:text-5xl font-extrabold mb-6 font-space-grotesk"
@@ -35,37 +38,36 @@ export default function WhyWebsite() {
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
             >
-              <div className="text-xl font-semibold text-white mb-2 flex items-center gap-2">
+              <div className="justify-center lg:text-xl text-base font-semibold text-white mb-2 flex items-center gap-2">
                 <Image
                   src={item.icon}
                   alt={item.title}
-                  width={30}
-                  height={30}
-                  className=""
+                  width={25}
+                  height={25}
                 />
                 <h3>{item.title}</h3>
               </div>
               <p className="text-[#ea9fa8]">{item.desc}</p>
             </motion.div>
           ))}
-        </div>
 
-        {/* Call to Action */}
-        <motion.div
-          className="mt-12"
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ duration: 0.6, delay: 1 }}
-        >
-          <a
-            href="https://forms.gle/wyuzM5KJoAxVGxut9"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="px-6 py-3 bg-[#fd025f] hover:bg-[#a6223a] transition-all duration-300 text-white text-lg font-semibold rounded-full shadow-xl font-inter"
+          {/* CTA Button as last grid item (not in a card) */}
+          <motion.div
+            className="flex items-center justify-center"
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: benefits.length * 0.1 }}
           >
-            Start Your Website Today!
-          </a>
-        </motion.div>
+            <a
+              href="https://forms.gle/wyuzM5KJoAxVGxut9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-6 py-3 bg-[#fd025f] hover:bg-[#a6223a] transition-all duration-300 text-white text-lg font-semibold rounded-full shadow-xl font-inter text-center"
+            >
+              Start Your Website Today!
+            </a>
+          </motion.div>
+        </div>
 
         {/* Urgency note */}
         <motion.p

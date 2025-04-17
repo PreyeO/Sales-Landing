@@ -37,7 +37,7 @@ export default function Footer() {
             </a>
           </div>
 
-          <p className="text-lg mb-4">© 2025 LetsCr8T. All Rights Reserved.</p>
+          <p className="text-sm mb-4">© 2025 LetsCr8T. All Rights Reserved.</p>
         </motion.div>
       </div>
     </footer>

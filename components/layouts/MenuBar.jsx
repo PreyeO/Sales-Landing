@@ -29,7 +29,7 @@ const MenuBar = () => {
   }, []);
 
   return (
-    <nav className="fixed bottom-5 left-1/2 -translate-x-1/2 w-[90%] md:w-[700px] bg-[#353131]/80 backdrop-blur-lg flex items-center justify-between shadow-xl md:p-4 p-2 rounded-full border border-[#ea9fa8]">
+    <nav className="fixed bottom-5 left-1/2 -translate-x-1/2 w-[92%] md:w-[700px] bg-[#353131]/80 backdrop-blur-lg flex items-center justify-between shadow-xl md:p-4 p-2 rounded-full border border-[#ea9fa8]">
       {menuItems.map((item) => (
         <Link
           key={item.href}

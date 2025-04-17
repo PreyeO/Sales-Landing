@@ -144,8 +144,8 @@ export const menuItems = [
   // { label: "Home", href: "#home" },
   { label: "WhyWebsite", href: "#whywebsite" },
   { label: "Howitworks", href: "#howitworks" },
-  { label: "projects", href: "#projects" },
-  { label: "Testimonials", href: "#testimonials" },
+  { label: "Projects", href: "#projects" },
+  { label: "Reviews", href: "#testimonials" },
 ];
 
 export const faqs = [

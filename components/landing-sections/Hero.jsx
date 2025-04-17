@@ -59,7 +59,7 @@ export default function Hero() {
             href="https://forms.gle/wyuzM5KJoAxVGxut9"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-6 py-3 bg-[#fd025f] hover:bg-[#a6223a] transition-all duration-300 text-white text-lg font-semibold rounded-full shadow-xl font-inter"
+            className="px-6 py-3 bg-[#fd025f] hover:bg-[#a6223a] transition-all duration-300 text-white lg:text-lg text-base  font-semibold rounded-full shadow-xl font-inter"
           >
             Book Your Website Slot Now
           </a>
@@ -83,7 +83,7 @@ export default function Hero() {
           transition={{ delay: 1.6 }}
         >
           {/* Desktop Image */}
-          <p className="text-sm text-[#ea9fa8] mb-2 text-center md:text-left italic flex justify-end">
+          <p className="hidden md:flex text-sm text-[#ea9fa8] mb-2 text-center md:text-left italic  justify-end">
             Your business website could look just like this 👇
           </p>
           <div className="w-full relative">
